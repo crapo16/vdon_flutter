@@ -3,8 +3,9 @@ description: Simple capture app for VDO.NInja
 version: 5.0.23+23
 versionCode: 23
 
-environment:
+environment:  
   sdk: ">=3.3.0 <4.0.0"
+  flutter: 3.19.0
 
 dependencies:  
   camera: ^0.9.4+5
