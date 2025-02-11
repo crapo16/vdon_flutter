@@ -14,7 +14,7 @@ import 'src/call_sample/call_sample.dart';
 import 'src/route_item.dart';
 
 import 'package:flutter_webrtc/flutter_webrtc.dart';
-import 'package:wakelock/wakelock.dart';
+import 'package:wakelock_plus/wakelock_plus.dart';
 import 'package:flutter_background/flutter_background.dart';
 
 import 'package:webview_flutter/webview_flutter.dart';
