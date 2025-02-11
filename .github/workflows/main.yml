@@ -2,9 +2,9 @@ name: Flutter CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ uvc ]
   pull_request:
-    branches: [ main ]
+    branches: [ uvc ]
 
 jobs:
   build:
