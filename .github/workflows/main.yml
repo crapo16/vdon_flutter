@@ -21,10 +21,7 @@ jobs:
           channel: stable
 
       - name: Install dependencies
-        run: flutter pub get
-
-      - name: Grant execute permissions
-        run: chmod +x gradlew
+        run: flutter pub get      
 
       - name: Build APK
         run: flutter build apk --release
