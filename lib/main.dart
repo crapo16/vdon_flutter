@@ -35,7 +35,7 @@ Future<bool> startForegroundService() async {
   final androidConfig = FlutterBackgroundAndroidConfig(
     notificationTitle: 'VDO.Ninja background service',
     notificationText: 'VDO.Ninja background service',
-    notificationImportance: Importance.max,
+    notificationImportance:  AndroidNotificationImportance.max,
     notificationIcon: AndroidResource(
         name: 'background_icon',
         defType: 'drawable'), // Default is ic_launcher from folder mipmap
@@ -220,7 +220,7 @@ class _MyAppState extends State<MyApp> {
     final androidConfig = FlutterBackgroundAndroidConfig(
       notificationTitle: "VDO.Ninja",
       notificationText: "VDO.Ninja is running in the background",
-      notificationImportance: Importance.max,
+      notificationImportance:  AndroidNotificationImportance.max,
       notificationIcon: AndroidResource(
           name: 'background_icon',
           defType: 'drawable'), // Default is ic_launcher from folder mipmap
