@@ -220,7 +220,7 @@ class _MyAppState extends State<MyApp> {
     final androidConfig = FlutterBackgroundAndroidConfig(
       notificationTitle: "VDO.Ninja",
       notificationText: "VDO.Ninja is running in the background",
-      notificationImportance: AndroidNotificationImportance.Default,
+      notificationImportance: AndroidNotificationImportance.MAX,
       notificationIcon: AndroidResource(
           name: 'background_icon',
           defType: 'drawable'), // Default is ic_launcher from folder mipmap
