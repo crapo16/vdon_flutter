@@ -35,7 +35,7 @@ Future<bool> startForegroundService() async {
   final androidConfig = FlutterBackgroundAndroidConfig(
     notificationTitle: 'VDO.Ninja background service',
     notificationText: 'VDO.Ninja background service',
-    notificationImportance: AndroidNotificationImportance.Default,
+    notificationImportance: AndroidNotificationImportance.defaultImportance,
     notificationIcon: AndroidResource(
         name: 'background_icon',
         defType: 'drawable'), // Default is ic_launcher from folder mipmap
@@ -213,7 +213,7 @@ class _MyAppState extends State<MyApp> {
 	roomID = roomID.replaceAll(RegExp('[^A-Za-z0-9]'), '_');
 
     setState(() {
-      Wakelock.enable();
+      WakelockPlus.enable();
       // You could also use Wakelock.toggle(on: true);
     });
 
